@@ -1,0 +1,88 @@
+h1{
+    max-width: 100%;
+    text-align: center;
+}
+
+main{
+    flex-direction: column;
+}
+
+.cursos-lista li{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(32, 32, 32); 
+}
+
+.cursos-item {
+    box-shadow: 3px 3px 3px rgb(66, 66 , 66);
+}
+
+.cursos-lista img{
+    width: 100%;
+}
+
+.cursos-descricao{
+    padding: 12px 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background-color: var(--secondary-color);
+    width: 24px;
+    height: 6px;
+    display: inline-block;
+    border-radius: 6px;
+}
+.cursos-lista li:hover span{
+    width: 86px;
+    transition: 0.7s;
+}
+
+.cursos-descricao ul{
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.cursos-descricao li{
+    background-color: gray;
+    border-radius: 6px;
+    padding: 16px 12px;
+    min-width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.saiba-mais{
+ background-color: var(--secondary-color);
+ display: inline-block;
+ width: 200px;
+ height: 32px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ right: -35px;
+ bottom: 20px;
+ transform: rotate(-35deg);
+}
+
+.cursos-lista{
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1100px){
+    .cursos-lista li{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .saiba-mais{
+        transform: rotate(40deg);
+        top: 30px;
+    }
+    
+}
